@@ -16,6 +16,7 @@ class CountUp extends React.Component {
       prefix,
       suffix,
       callback,
+      delay,
     } = this.props;
 
     this.state = {
@@ -30,6 +31,7 @@ class CountUp extends React.Component {
       prefix,
       suffix,
       callback,
+      delay,
     };
 
     this.startAnimation();
@@ -52,6 +54,7 @@ class CountUp extends React.Component {
       prefix,
       suffix,
       callback,
+      delay,
     } = this.props;
 
     const countup = new Count(findDOMNode(this), start, end, decimals, duration, {
@@ -61,6 +64,7 @@ class CountUp extends React.Component {
       decimal,
       prefix,
       suffix,
+      delay,
     });
 
     countup.start(callback);
@@ -84,6 +88,7 @@ CountUp.defaultProps = {
   decimal: '.',
   prefix: '',
   suffix: '',
+  delay: 0,
 };
 
 CountUp.propTypes = {
@@ -100,6 +105,7 @@ CountUp.propTypes = {
   prefix: PropTypes.string,
   suffix: PropTypes.string,
   callback: PropTypes.func,
+  delay: PropTypes.number,
 };
 
 export default CountUp;
