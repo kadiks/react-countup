@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { findDOMNode } from 'react-dom';
-import Count from 'countup.js';
+import Count from 'countup';
 
 class CountUp extends React.Component {
   componentDidMount() {

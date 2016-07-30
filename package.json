@@ -45,7 +45,7 @@
     "react-dom": "^0.14.0 || ^15.0.0"
   },
   "dependencies": {
-    "countup.js": "git+ssh://github.com/kadiks/countUp.js.git#master",
+    "countup": "git+ssh://github.com/kadiks/countUp.js.git#master",
     "react": "^15.2.1",
     "react-dom": "^15.2.1"
   },
